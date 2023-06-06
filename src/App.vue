@@ -1,8 +1,13 @@
 <script setup>
+import ScriptSetup from './components/ScriptSetup.vue'
+import SetupMethod from './components/SetupMethod.vue'
+import OptionsAPI from './components/OptionsAPI.vue'
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <div class="movie-list flex flex-wrap gap-4 max-[450px]:justify-center">
+    <ScriptSetup />
+    <SetupMethod />
+    <OptionsAPI />
+  </div>
 </template>

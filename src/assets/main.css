@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text {
+    @apply text-black dark:text-white;
+}
+
+.item-hover {
+    @apply hover:text-red dark:hover:text-yellow;
+}
+
+.button {
+    @apply bg-red rounded-full px-6 py-3 h-fit text-white;
+}
+
+.movie-item__hover {
+    @apply hidden absolute left-0 bottom-0 w-full h-full group-hover:flex justify-center items-center shadow-inset-custom group-hover:dark:bg-dark-backdrop;
+}
+
+.movie-item__title-in {
+    @apply hidden lg:block absolute left-0 bottom-0 pl-4 pb-4;
+}
+
+.movie-item__title-in__heading {
+    @apply text-white text-xl group-hover:text-red dark:group-hover:text-yellow;
+}
